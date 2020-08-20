@@ -62,6 +62,7 @@ public class Welcome extends javax.swing.JFrame  implements ActionListener{
         b1.setForeground(Color.WHITE);
         b1.setFont(new Font("serif", Font.BOLD, 16));
         b1.setBounds(740,0,150,44);
+        b1.addActionListener(this);
         ii.add(b1);
         
         JButton b2=new JButton("Login");
@@ -108,10 +109,15 @@ public class Welcome extends javax.swing.JFrame  implements ActionListener{
         });
     }
 
-    @Override
     public void actionPerformed(ActionEvent e) {
-    new Login().setVisible(true);
+        if(e.getActionCommand().equals("Login")){
+          new Login().setVisible(true);
     this.setVisible(false);
+        }
+        else if(e.getActionCommand().equals("Registration")){
+          new Registration().setVisible(true);
+    this.setVisible(false);
+        }
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

@@ -1,4 +1,8 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package nithotel;
 
 import java.awt.Color;
@@ -6,11 +10,14 @@ import java.awt.Font;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+/**
+ *
+ * @author Tito Vyasila
+ */
+public class Largec  extends JFrame {
+    Largec(){
 
-public class Single extends JFrame {
-    Single(){
-
-        JLabel h = new JLabel("Select Single Room You Want");
+        JLabel h = new JLabel("Select Couple Room You Want");
         h.setForeground(Color.BLACK);
         h.setFont(new Font("serif", Font.BOLD, 20));
         h.setBounds(180, 0, 2000, 27);
@@ -22,7 +29,8 @@ public class Single extends JFrame {
     }
     
     public static void main(String[] args){
-        new Single();
+        new Largec();
     
     }
+    
 }
